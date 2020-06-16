@@ -1,0 +1,31 @@
+<div>
+<div class="orderstatus" [ngClass]="{ 'activeorder' : status === 'MAKING'}">
+  MAKING
+</div>
+<div class="orderstatus" [ngClass]="{ 'activeorder' : status === 'BAKING'}">
+  BAKING
+</div>
+<div class="orderstatus" [ngClass]="{ 'activeorder' : status === 'BOXING'}">
+  BOXING
+</div>
+<div class="orderstatus" [ngClass]="{ 'activeorder' : status === 'ON_ITS_WAY'}">
+  ON ITS WAY
+</div>
+<div class="orderstatus" [ngClass]="{ 'activeorder' : status === 'DELIVERED'}">
+  DELIVERED
+</div>
+
+<div class="search-wrapper">
+  <br/>
+  Search for your order with your phone number
+  <br/>
+  * <b> Phone Number</b>
+    <!-- <form (ngSubmit)="searchOrder($event.target.phoneNumber.value)"> -->
+        <input type="text" [(ngModel)]="phoneNumber" name="phoneNumber" placeholder="Enter phone number" />
+        <button type="button" (click) = "searchOrder()">Track your Order</button>
+    <!-- </form> -->
+</div>
+<br/>
+
+
+</div>

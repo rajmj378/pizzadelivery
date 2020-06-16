@@ -1,0 +1,10 @@
+.orderstatus {
+  background-color: #cfc ;
+  padding: 10px ;
+  border: 1px solid green ;
+  display: inline-block;
+}
+
+.activeorder {
+  background-color: #FF0000 ;
+}
